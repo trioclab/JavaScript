@@ -26,7 +26,7 @@ console.log(Multiply);
 const Division = num1 / 2 ;
 console.log(Division);
 
-// Reminder
+// Reminder or Module
 const Reminder = 17 % 2;
 console.log(Reminder);
 

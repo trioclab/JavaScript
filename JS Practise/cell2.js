@@ -51,23 +51,57 @@ for(let i = 0; i < subjects.length ; i++){
 }
 
 
+// for in loop 
+
+
+let ali = "He is a Good Boy."
+let size = 0;
+for ( let i of ali ){
+    console.log(i);
+    size++;
+}
+console.log(size);
 
 
 
-let user_01 = {
-    Name : "Ali",
-    Pass : "123"
+let String = "He is angry.";
+size = 0 ;
+for( let val of String){
+    console.log(val);
+    size++;
+}
+console.log(size);
+
+
+// for in loop
+
+let object1 = {
+    name : "Sania",
+    class : "14",
+    rollno : 26
 }
 
-function detail(){
-    let username = prompt("Enter your username : ")
-    let password = prompt("Enter your password : ")
-    if( username == user_01.Name && password == user_01.Pass){
-        alert("Successfully login!");
-    }else{
-        alert("Wrong Credientials!");
-    }
+for ( let key in object1){
+    console.log(key , object1[key])
 }
 
 
-detail()
+
+
+
+
+
+
+
+do{
+    let number = prompt("Enter a number: ");
+    if(number % 5 == 0){
+    console.log("The number is the multiple of Five.");
+    break;
+}else{
+    console.log("It is not the multiple of the five.")
+ }
+}while(true);
+
+
+x
