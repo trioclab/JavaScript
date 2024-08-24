@@ -1,0 +1,9 @@
+// functions in Java Script 
+
+function abcd(a){
+   a();
+}
+
+abcd(function(){
+    console.log("This is a first class function.");
+});
