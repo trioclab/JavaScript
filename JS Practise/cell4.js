@@ -1,43 +1,40 @@
-// functions in Java Script 
-
-// ******Basic function 
-
-let func = function hello(){
-    console.log("This is the basic function!!!");
-}
-hello();   // calling the function 
-
-// ****** Fat arrow function in ES6
-let fatFunc = ()=>{
-    console.log("This is the basic fat arrow function.");
-    return 0 ;
-}
-fatFunc();
-
-// *******Fat arrow function with one parameter , parameter is the value which we pass in the function 
-let paraFunc = (val1 , val2)=>{
-     console.log(`The addition of ${val1} and ${val2} is ${val1 + val2}.`)
-}
-// here 12 and 17 are the parameters of the function name paraFunc
-paraFunc(12 , 17);
-
-let oneParam = para=>{
-    console.log(`If we get the one parameter in the function then we can remove the fat of the function (). So here is the parameter is ${para}`)
-}
-oneParam(12);
-
-//******* Fat arrow function with implicit return
-let returnFunc = para=> 122;
-console.log(returnFunc()); //return the 122 
-
-// *******first class function where a function is going to another function by the variable a
-function abcd(a){
-   a();
-}
-abcd(function(){
-    console.log("This is a first class function.");
-});
-
-// 
+// Arrays
 
 
+
+// ***********  arrays and its method
+
+let numbers = [12 , 67 , 49 , 38];
+numbers = numbers.toString()
+console.log(numbers);
+
+// concatination of the arrays as in the strings
+
+let moods = ["happy", "sad" , "chill"];
+let moodMarks = [ 10, 5 , 2];
+// it will give the new array meanwhile the moods and moodmarks doesn't change
+let mood = moods.concat(moodMarks)
+console.log(mood);
+
+// unshift and shift method
+
+moods = ["happy", "sad" , "chill"];
+moods.unshift("angry");
+console.log(moods);
+
+moodMarks = [ 10, 5 , 2];
+let shiftMoodMarks = moodMarks.shift();
+console.log(shiftMoodMarks);
+
+// Slice and Splice method 
+// slice(startingIndex , EndingIndex)   , it doesn't change the original array
+let number = [12 , 34 ,45 ,56 ,67];
+number = number.slice(0 , 3);
+console.log(number)
+
+// splice(startingIndex , for deleting the value in the arrat , if want to add the new value in the array)   , it will change the original array
+// it used for add , remove or replace the values in the array
+
+let fruitsPrice = [ 12 , 34 , 45 , 5 , 90 ,78];
+fruitsPrice = fruitsPrice.splice(1 , 4 , 74 , 56);
+console.log(fruitsPrice)
