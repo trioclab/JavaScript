@@ -38,6 +38,33 @@ abcd(function(){
     console.log("This is a first class function.");
 });
 
-// 
+// Create a function using the "function" keyword that takes a Array as an argument & returns the number of vowels in the string
+
+let english = ["a", "b", "c", "d", "e"];
+
+function vowels() {
+    for (let i = 0; i < english.length; i++) {
+        if (["a", "e", "i", "o", "u"].includes(english[i])) {
+            console.log("vowel");
+        } else {
+            console.log("not vowels there");
+        }
+    }
+}
+vowels();
 
 
+
+// Create a function using the "function" keyword that takes a String as an argument & returns the number of vowels in the string
+
+function countVowel(str){
+    for(let count of str){
+        if(count === "a" ||count === "e" ||count === "i" ||count === "o" ||count === "u"){
+            console.log(`${count} is vowel letter.`);
+        }else{
+            console.log(`${count} is consonent letter.`);
+        }
+    }
+}
+
+countVowel("ApnaCollege");

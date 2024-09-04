@@ -38,3 +38,9 @@ console.log(number)
 let fruitsPrice = [ 12 , 34 , 45 , 5 , 90 ,78];
 fruitsPrice = fruitsPrice.splice(1 , 4 , 74 , 56);
 console.log(fruitsPrice)
+
+
+// Push method in array
+let array = [12 , 23 ,45 ,67 ,78];
+array = array.push(67);
+console.log(array);
