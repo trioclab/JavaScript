@@ -39,3 +39,38 @@ if(num1 === 12){
     console.log("They are not equal duh!")
 }
 
+let enteredClass = 12;
+
+// Object 
+let fruits = {
+    fruit1 : "Apple",
+    fruit2 : "Banana",
+    fruit3 : "Date",
+    fruit4 : "Mango"
+}
+
+console.log(fruits.fruit3)
+console.log(fruits.fruit2)
+console.log(fruits.fruit1)
+console.log(fruits.fruit4)
+
+
+let Class = {
+    student : 30,
+    class : function(){
+        if (enteredClass > 10){
+            console.log("You are in the Class");
+        }else{
+            console.log("You are not in the Class");
+        }
+    }
+    
+}
+// for getting the value of the function we will call the method as the function such as class()
+console.log(Class.class())
+
+
+
+
+console.log("This is what I first learn about JavaScript");
+alert("This is the second thing I learn about JavaScript");
