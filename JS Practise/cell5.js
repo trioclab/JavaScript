@@ -37,6 +37,7 @@ function abcd(a){
 abcd(function(){
     console.log("This is a first class function.");
 });
+console.log(typeof abcd);
 
 // Create a function using the "function" keyword that takes a Array as an argument & returns the number of vowels in the string
 
@@ -52,7 +53,7 @@ function vowels() {
     }
 }
 vowels();
-
+console.log(typeof vowels);
 
 
 // Create a function using the "function" keyword that takes a String as an argument & returns the number of vowels in the string
@@ -68,3 +69,4 @@ function countVowel(str){
 }
 
 countVowel("ApnaCollege");
+console.log(typeof countVowel);
