@@ -87,6 +87,7 @@ for (let key in object1) {
 }
 // For each Loop
 // for each loop is only for arrays 
+// For each loop is a method 
 
 let array = [12 , 23, 93, 34 , 45, 78];
 let add = 0;
