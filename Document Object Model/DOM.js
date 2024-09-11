@@ -15,7 +15,12 @@
 // pillar 4
 // addeventlistener is a higher order function
 
-
+// window is an object provided by the browser 
+window.document 
+console.dir(document)  //for outout of the object use dir instead of the log and console.dir(document) will show the html code of the DOM object where document is the model called DOM (Document Object Model)
+console.log(window.document)
+console.log(window.document.body)
+console.log(document.body.childNodes[1]) //this will give the first node of the body of the HTML DOM
 
 let bulb = document.querySelector("#bulb");
 let button = document.querySelector("#button");
@@ -41,11 +46,9 @@ button.addEventListener("click", function(){
 // if you want to select multiple elements with the same tag they have ,then querySelector will only take the first element with the tag name , at this place you can use :   "querySelectorAll" it will save the all the elements in the nodelist which is quite similar to array here is a example :
 
 // let paragraphs = document.querySelectorAll("p");
-
 // console.log(paragraphs);
 
 // // or we can use for each function
-
 // paragraphs.forEach(function(e){
 //     console.log(e);  // it will show the elements which have tag p 
 
@@ -55,4 +58,4 @@ button.addEventListener("click", function(){
 // -----------------------------------------------------------------------------------------------------
 // Differentiate between textContent and innerHTML
 // textContent just provide the data in the text form like change the html only provide their text
-// meanwhile inerHTML provide the proper element in the html document   
+// meanwhile innerHTML provide the proper element in the html document   
