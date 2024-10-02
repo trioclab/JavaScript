@@ -24,3 +24,10 @@ body {
     box-shadow:0 0 20px 10px rgba(255, 255, 255, 0.612) ;
 
 }
+.container{
+    /* columns: 300px;  it will make the columns and make the images size exact */
+    /* column-count: 3; this is the columns counting like how much you want the columns  */
+}
+@media  (max-width : 600) {
+    /* column-count: 2; this is for responsiveness if you use column-count */
+}
