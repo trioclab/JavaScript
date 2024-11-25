@@ -4,6 +4,21 @@
 // Binds this to the new object.
 // Returns the new object.
 
+
+
+// **** Delete keyword
+const user = {
+    name: "Faizan",
+    age: 22
+};
+console.log(user.age); // 22
+delete user.age; // Deletes the 'age' property
+console.log(user.age); // undefined
+
+
+
+
+
 // ******* Factory Functions 
 // its return the object 
 //here we return the object created in the function
