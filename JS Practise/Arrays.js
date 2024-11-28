@@ -1,5 +1,5 @@
 // Arrays
-
+// Arrays and Maps are also called iterable and for of loop used on them.
 const { CloseButton } = require("react-bootstrap");
 const { Prev } = require("react-bootstrap/esm/PageItem");
 

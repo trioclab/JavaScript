@@ -49,7 +49,7 @@ for (let i = 0; i < subjects.length; i++) {
   }
 }
 
-// for of loop
+// for of loop only on arrays and maps
 
 let ali = "He is a Good Boy.";
 let size = 0;
@@ -74,14 +74,24 @@ for (let average of marks) {
 let ave = sum / marks.length;
 console.log(`Your average marks is ${ave}.`);
 
-// for in loop
+// ***** Hack to use the for of loop on objects
+Rectangle = {
+  length : 20,
+  breadth : 10
+}
+// for(let key of Object.keys(Rectangle)){
+for(let key of Object.enteries(Rectangle)){
+console.log(key)
+}
 
+
+
+// for in loop on objects
 let object1 = {
   name: "Sania",
   class: "14",
   rollno: 26,
 };
-
 for (let key in object1) {
   console.log(key, object1[key]);
 }

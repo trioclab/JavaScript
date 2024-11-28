@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    height: max-content;
-    width: 100vw;
+    background: grey;
+}
+li{
+    border: solid black 2px;
+    padding: 10px;
 }
