@@ -22,3 +22,7 @@ let string = "This is me";
 string = string.split(" ")
 console.log(string)
 console.log(typeof string)
+
+
+// methods of string 
+padStart 
