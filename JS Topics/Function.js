@@ -79,10 +79,36 @@ function countVowel(str){
         if(count === "a" ||count === "e" ||count === "i" ||count === "o" ||count === "u"){
             console.log(`${count} is vowel letter.`);
         }else{
-            console.log(`${count} is consonent letter.`);
+            console.log(`${count} is consonent   letter.`);
         }
     }
 }
 
 countVowel("ApnaCollege");
 console.log(typeof countVowel);
+
+// for in 
+// fat arrow fun with implicit return 
+// fat arrow fun with one param
+let kk =function(){
+    let a = 99;
+    return function jj(eee){
+        console.log(a*eee);
+    }
+}
+
+kk();
+
+
+// rest operator    
+let restOpeartor = (...args)=>{
+    // let e = 0;
+    // e = e + args
+    console.log(e);
+    args.forEach(e => {
+        e =+ e
+        console.log(e);
+        
+    });     
+};
+restOpeartor(1, 2, 3 , 4 ,7)

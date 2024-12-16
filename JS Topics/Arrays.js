@@ -11,13 +11,17 @@ let numbers = [12 , 67 , 49 , 38];
 numbers = numbers.toString()
 console.log(numbers);
 
-// concatination of the arrays as in the strings
 
+
+
+// concatination of the arrays as in the strings
 let moods = ["happy", "sad" , "chill"];
 let moodMarks = [ 10, 5 , 2];
 // it will give the new array meanwhile the moods and moodmarks doesn't change
 let mood = moods.concat(moodMarks)
 console.log(mood);
+
+
 
 // unshift and shift method
 
@@ -82,3 +86,12 @@ let bigNUm = ginti.reduce((pre , val)=>{
     // return pre < val ? pre : val ; for minimum number in the array
 })
 console.log(bigNUm);
+
+
+// how to make the array empty 
+let arr = [1 , 2 , 3 , 4 , 5 ]
+let copy_arr = arr;
+
+arr.length() = 0;
+console.log(arr);
+console.log(copy_arr);

@@ -1,4 +1,6 @@
 let FirstName = "Sania";
+
+// object string 
 let LastName = new String("Kiran");
 console.log(FirstName +" " +  LastName)
 console.log(typeof FirstName);
