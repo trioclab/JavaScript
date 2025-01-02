@@ -95,3 +95,12 @@ let copy_arr = arr;
 arr.length() = 0;
 console.log(arr);
 console.log(copy_arr);
+
+
+
+// reducing array
+array = [1,2,3,4,5]
+sum = array.reduce((accumulator , currentValue)=>{
+    return accumulator + currentValue
+} , 0)
+console.log(sum);

@@ -102,8 +102,6 @@ kk();
 
 // rest operator    
 let restOpeartor = (...args)=>{
-    // let e = 0;
-    // e = e + args
     console.log(e);
     args.forEach(e => {
         e =+ e
@@ -112,3 +110,42 @@ let restOpeartor = (...args)=>{
     });     
 };
 restOpeartor(1, 2, 3 , 4 ,7)
+
+
+
+//rest opeartor to use the array of string into the object
+let rstOperator = (...args)=>{
+
+        args.forEach(e => {
+            console.log({value : e})
+        });
+    }
+    rstOperator("Sania", "Haider", "Amina", "Minahil");
+
+
+
+
+    // ******* Getter and Setter Functions *******
+
+    let person = {
+        fName: "Sania",
+        lName: "Kiran",
+        get fullName() {
+            // Getter should return the full name
+            return `${this.fName} ${this.lName}`;
+        },
+        set fullName(name) {
+            // Split the input name into first and last name
+            const parts = name.split(" ");
+            this.fName = parts[0] || ""; // Assign first name
+            this.lName = parts[1] || ""; // Assign last name
+        }
+    };
+    
+    // Using the getter
+    console.log(person.fullName); // Output: "Sania Kiran"
+    
+    // Using the setter
+    person.fullName = "Minal Khan";
+    console.log(person.fullName); // Output: "Minal Khan"
+    

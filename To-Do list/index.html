@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body>
-    <div id="wrapper">
-        <div id="input-field">
-            <input type="text" placeholder="Enter the Task You want to do..." required>
+<body >
+    <div id="wrapper" class="flex items-center mt-20 flex-col">
+        <div>
+            <input type="text" id="input-field" class="p-2 w-72 rounded" placeholder="Enter the Task You want to do..." required>
+            <button class="bg-gray-300 px-4 py-2 rounded" id="SaveBtn">Save</button>
         </div>
-        <!-- <div id="list-field"></div> -->
+        <ul  id="list-field">
+            
+            <!-- Tasks will be dynamically added here -->
+        </ul>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="main.js"></script>    
+    <script src="ma in.js"></script>    
 </body>
 </html>

@@ -4,44 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    /* height: max-content; */
-    height: 100vh;
-    width: 100vw;
+    background: indigo;
 }
-#wrapper{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(31, 4, 239);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+ul{
+    background: gray;
 }
-input{
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    background-color: rgb(13, 13, 151);
+li{
     color: white;
-    border-radius: 10px;
-    width: 400px;
-}
-input:active{
-    background-color: white;
-}
-input:focus{
-    background-color: white;
-    color: blue;
-}
-#list-field{
-    height: max-content;
-    width: max-content;
-    padding: 3rem;
-    color: white;
-    font-size: 1.3rem;
-    background-color: white;
-}
-#new-div{
-    background-color: peachpuff;
+    padding: 10px;
+    text-align: left;
 }

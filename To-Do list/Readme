@@ -1,0 +1,30 @@
+**************************   Mini Project: To-Do List App
+
+
+
+Problem Statement:
+
+Create a simple To-Do List application using HTML, CSS, and JavaScript. The app should allow users toAdd tasks to the list by entering text and clicking a button.
+Display tasks dynamically on the webpage.
+Delete tasks when a "Delete" button next to each task is clicked.
+(Optional) Mark tasks as completed by clicking on them (strikethrough effect).
+
+
+
+
+Requirements
+Use an input field and a button to add tasks.
+Use an unordered list (<ul>) to display tasks dynamically.
+When a task is added, display it as a list item (<li>).
+Each list item must have a Delete button that removes the task from the list.
+(Optional): Add a feature to strike through tasks when clicked (marking as "completed").
+
+
+Example
+Here’s how it should work:
+
+User enters a task: "Buy groceries" → Clicks Add Task → The task appears in the list.
+The list shows:
+Buy groceries [Delete]
+If the user clicks Delete, the task disappears.
+If the user clicks on the task itself (optional), it gets marked as "completed" (e.g., strikethrough).
