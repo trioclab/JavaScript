@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaniaKiran's share Modal</title>
+    <style>
+      body {
+        background-color: black;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .circles {
+        animation: myfirst 6s infinite alternate;
+        z-index: 0;
+      }
+      @keyframes myfirst {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translate(50px);
+        }
+      }
+      #wrapper {
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+      }
+      #circle1 {
+        height: 15vmax;
+        width: 15vmax;
+        background: linear-gradient(to right, violet, rgb(120, 55, 120));
+        border-radius: 50%;
+        box-shadow: 0 0 30px 10px rgba(238, 130, 238, 0.546);
+        position: absolute;
+        top: 10%;
+        left: 20%;
+      }
+      #circle2 {
+        height: 19vmax;
+        width: 19vmax;
+        background: linear-gradient(
+          to right,
+          rgb(128, 14, 209),
+          rgb(56, 4, 92)
+        );
+        border-radius: 50%;
+        box-shadow: 0 0 30px 10px rgba(76, 0, 130, 0.696);
+        position: absolute;
+        top: 40%;
+        left: 60%;
+      }
+      #image{
+        height: 10vmax;
+        width: 10vmax;
+    }
+    img{
+        height: 100%;
+        border-radius: 50%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    #card{
+        background: rgba(245, 245, 245, 0.201);
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vmax 2vmax;
+        border-radius:20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    h1{
+        font-size: 2.5vmax;
+        margin:10px 0 0 0 ;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    button{
+        padding: 10px 20px;
+        background: transparent;
+        border: 2px solid whitesmoke;
+        outline: none;
+        color: whitesmoke;
+        border-radius: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    @media (max-width: 600px) {
+        #image{
+        height: 20vmax;
+        width: 20vmax;
+    }
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="circles" id="circle1"></div>
+      <div class="circles" id="circle2"></div>
+      <div id="card">
+        <div id="image">
+            <img src="./sania.jpg" alt="">
+        </div>
+        <h1>Sania Kiran</h1>
+        <p>Web Developer</p>
+        <div class="buttons">
+          <button id="LinkedIn">LinkedIn</button>
+          <button id="Github">Github</button>
+        </div>
+      </div>
+    </div>
+    <script src="./share-modal.js"></script>
+  </body>
+</html>
